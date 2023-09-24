@@ -1,0 +1,33 @@
+.reservations {
+	display: grid;
+	list-style: none;
+	margin: 1rem;
+	padding: 0;
+}
+.name {
+	font-weight: bold;
+}
+.date {
+	border: 1px solid white;
+}
+.reservation {
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+	border-bottom: 1px dashed lightgrey;
+}
+
+.view-more {
+	font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+	.reservations {
+		width: 100%;
+	}
+	.reservation {
+		grid-template-columns: 33% 33% 33%;
+	}
+}
